@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5eee2">
+  <title>Министерство сладких и чайных дел Юга</title>
+  <meta name="description" content="Чай, сладости и изделия с южным настроением.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-season="auto">
+  <div class="season-glow"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark">М<span>✳</span></span>
+      <span class="brand-name">Министерство сладких<br>и чайных дел Юга</span>
+    </a>
+    <nav class="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a class="max-link" href="https://max.ru/join/r8v_lMgSafrAmcktGtAoB9Z8st4uBeOLolKvXw-jE0c" target="_blank" rel="noopener">Мы в MAX <span>↗</span></a>
+      <button class="icon-btn" id="settingsOpen" aria-label="Настройки">⚙</button>
+      <button class="menu-btn" id="menuToggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span id="seasonCaption">Южное настроение в каждой детали</span></div>
+        <h1>Немного тепла.<br><em>Много вкуса.</em></h1>
+        <p>Чай, сладости и особенные изделия, созданные для уютных моментов и приятных подарков.</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#catalog">Смотреть каталог <span>↘</span></a>
+          <a class="text-link" href="#contacts">Связаться с нами <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-dot"></span> Собираем маленькие радости каждый день</div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="hero-sun"></div>
+        <div class="tea-illustration">
+          <div class="tea-steam steam-one"></div><div class="tea-steam steam-two"></div>
+          <div class="tea-cup"><div class="tea-liquid"></div><div class="cup-handle"></div></div>
+          <div class="saucer"></div>
+        </div>
+        <div class="floating-label label-top">Южная коллекция <span>✦</span></div>
+        <div class="floating-label label-bottom">Тепло в каждой чашке</div>
+        <div class="art-leaf leaf-a">✦</div><div class="art-leaf leaf-b">✳</div>
+      </div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>04</span></div>
+    </section>
+
+    <section class="season-strip">
+      <span class="strip-label">Настроение сезона</span>
+      <div class="season-options">
+        <button data-pick-season="spring">Весна <span>✿</span></button>
+        <button data-pick-season="summer">Лето <span>☼</span></button>
+        <button data-pick-season="autumn">Осень <span>🍂</span></button>
+        <button data-pick-season="winter">Зима <span>❄</span></button>
+      </div>
+      <span class="auto-season">Автоматически <span class="pulse"></span></span>
+    </section>
+
+    <section class="catalog section-wrap" id="catalog">
+      <div class="section-heading reveal">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span>Наша витрина</div><h2>Выберите что-то <em>вкусное</em></h2></div>
+        <p>Небольшая подборка того, что делает обычный день чуточку приятнее.</p>
+      </div>
+      <div class="catalog-tools">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="Все">Все товары</button>
+          <button class="filter" data-filter="Чай">Чай</button>
+          <button class="filter" data-filter="Сладости">Сладости</button>
+          <button class="filter" data-filter="Другое">Другое</button>
+        </div>
+        <span class="items-count" id="itemsCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>Пока здесь ничего нет. Загляните чуть позже ✦</div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-symbol reveal"><span>М</span><i>✳</i></div>
+      <div class="about-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span>Наша философия</div>
+        <h2>Создаём поводы<br>для <em>уютных пауз.</em></h2>
+        <p>Мы верим, что хорошие вещи не обязаны быть сложными. Иногда достаточно любимого чая, чего-нибудь сладкого и нескольких спокойных минут.</p>
+        <a class="text-link" href="#contacts">Познакомиться ближе <span>→</span></a>
+      </div>
+      <div class="about-stamp">Сделано<br>с теплом <span>♥</span></div>
+    </section>
+
+    <section class="contact-band" id="contacts">
+      <div><div class="eyebrow light"><span class="eyebrow-line"></span>Есть вопросы или хотите заказать?</div><h2>Давайте <em>общаться.</em></h2><p>Напишите или позвоните — поможем с выбором и расскажем подробнее.</p></div>
+      <div class="contact-actions"><a class="button button-light" href="tel:+79298404420">+7 929 840-44-20 <span>↗</span></a><a class="max-contact" href="https://max.ru/join/r8v_lMgSafrAmcktGtAoB9Z8st4uBeOLolKvXw-jE0c" target="_blank" rel="noopener">Перейти в MAX →</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">М<span>✳</span></span><span class="brand-name">Министерство сладких<br>и чайных дел Юга</span></a><span>© <span id="year"></span> Все права защищены</span><a href="#home">Наверх ↑</a></footer>
+
+  <div class="overlay" id="settingsOverlay">
+    <aside class="drawer">
+      <div class="drawer-head"><div><div class="eyebrow">Персонализация</div><h3>Настройки</h3></div><button class="close-btn" data-close>×</button></div>
+      <div class="setting-group"><label>Оформление сайта</label><p>Выберите сезон или верните автоматическое переключение.</p>
+        <select id="seasonSelect"><option value="auto">Автоматически по календарю</option><option value="spring">Весна</option><option value="summer">Лето</option><option value="autumn">Осень</option><option value="winter">Зима</option></select>
+      </div>
+      <div class="setting-group"><label>Администрирование</label><p>Войдите в аккаунт, чтобы управлять ассортиментом. Для настоящего защищённого входа нужно подключить сервер авторизации.</p><button class="button button-dark full" id="loginOpen">Войти в аккаунт <span>→</span></button></div>
+      <div class="setting-group small-note">Настройки сезона сохраняются на этом устройстве.</div>
+    </aside>
+  </div>
+
+  <div class="modal-overlay" id="loginOverlay">
+    <div class="modal">
+      <button class="close-btn modal-close" data-close>×</button>
+      <div class="eyebrow">Доступ к магазину</div><h3>Вход в аккаунт</h3>
+      <p class="modal-description">Форма подготовлена для подключения защищённой авторизации и подтверждения входа по электронной почте.</p>
+      <form id="loginForm"><label for="email">Электронная почта</label><input id="email" type="email" placeholder="name@example.com" required><label for="password">Пароль</label><input id="password" type="password" placeholder="Введите пароль" required><button class="button button-dark full" type="submit">Продолжить <span>→</span></button></form>
+      <p class="security-note">Двухэтапная проверка на savvadc@gmail.com будет активирована после подключения Supabase/Firebase. Не вводите здесь настоящий пароль: пока это демонстрационный интерфейс.</p>
+      <button class="demo-link" id="demoAdmin">Открыть локальную демо-панель управления</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="adminOverlay">
+    <div class="modal admin-modal">
+      <button class="close-btn modal-close" data-close>×</button>
+      <div class="eyebrow">Локальный режим · только для демонстрации</div><h3>Управление товарами</h3>
+      <p class="modal-description">Изменения сохраняются только в этом браузере и не видны посетителям сайта с других устройств.</p>
+      <form id="productForm">
+        <input type="hidden" id="editId">
+        <label for="productName">Название товара</label><input id="productName" required placeholder="Например, Чёрный чай">
+        <div class="form-row"><div><label for="productPrice">Цена, ₽</label><input id="productPrice" type="number" min="0" required placeholder="350"></div><div><label for="productCategory">Категория</label><select id="productCategory"><option>Чай</option><option>Сладости</option><option>Другое</option></select></div></div>
+        <label for="productDescription">Описание</label><textarea id="productDescription" rows="2" placeholder="Коротко о товаре"></textarea>
+        <label class="check-label"><input id="productAvailable" type="checkbox" checked> Товар есть в наличии</label>
+        <button class="button button-dark full" type="submit">Сохранить товар <span>✓</span></button>
+      </form>
+      <div class="admin-list" id="adminList"></div>
+      <button class="demo-link" id="exitAdmin">Закрыть демо-панель</button>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
